@@ -5,8 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyCon</title>
+    <style>
+        .flex-container > span {
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-container1 > span {
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            padding-left: 155px;
+        }
+
+        
+    </style>
 </head>
 <body>
+    <div class="flex-container1">
+    <p id="showatas"></p>
+    <p id="showkiri"></p>
+    <p id="showbawah"></p>
+    <p id="showkanan"></p>
+    <span><button id="btnatas" onclick="btnAtas()">[^]</button></span>
+    </div>
+    <div class="flex-container">
+    <span><button id="btnkiri" onclick="btnKiri()">[<]</button></span>
+    <span><button id="btnbawah" onclick="btnBawah()">[v]</button></span>
+    <span><button id="btnkanan" onclick="btnKanan()">[>]</button></span>
+    </div>
+    <script>
+        
+        function btnAtas(){
+            document.getElementById("showatas").innerHTML='Atas';
+        }
+        function btnKiri(){
+            document.getElementById("showkiri").innerHTML='Kiri';
+        }
+        function btnBawah(){
+            document.getElementById("showbawah").innerHTML='Bawah';
+        }
+        function btnKanan(){
+            document.getElementById("showkanan").innerHTML='Kanan';
+        }
+        
+    </script>
+ 
+
+
+
+
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
     <!-- [<][v][>]      [B][A] -->
