@@ -36,6 +36,8 @@
             <p id="showkiri" style="text-align: center; font-size: 50px;"></p>
             <p id="showbawah" style="text-align: center; font-size: 50px;"></p>
             <p id="showkanan" style="text-align: center; font-size: 50px;"></p>
+            <p id="showb" style="text-align: center; font-size: 50px;"></p>
+            <p id="showa" style="text-align: center; font-size: 50px;"></p>
         </div>
     
     <span><button id="btnatas" onclick="btnAtas()" style="height: 35px;">UP</button></span>
@@ -44,8 +46,8 @@
     <span><button id="btnkiri" onclick="btnKiri()" style="height: 35px;">LEFT</button></span>
     <span><button id="btnbawah" onclick="btnBawah()" style="height: 35px;">DOWN</button></span>
     <span><button id="btnkanan" onclick="btnKanan()" style="height: 35px;">RIGHT</button></span>
-    <span><button style="height: 35px; width: 35px; background-color: brown;">B</button></span>
-    <span><button style="height: 35px; width: 35px; background-color: brown;">A</button></span>
+    <span><button style="height: 35px; width: 35px; background-color: brown;" id="btnB" onclick="btnB()">B</button></span>
+    <span><button style="height: 35px; width: 35px; background-color: brown;" id="btnA" onclick="btnA()">A</button></span>
     </div>
     <div style="text-align: right; margin-right: 50px;">
         <p>21430114</p>
@@ -66,7 +68,13 @@
         function btnKanan(){
             document.getElementById("showkanan").innerHTML='Kanan';
         }
+        function btnB(){
+            document.getElementById("showb").innerHTML='B';
+        }
         
+        function btnA(){
+            document.getElementById("showa").innerHTML='A';
+        }
     </script>
  
 
